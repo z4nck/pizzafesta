@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel | Pizzaria & Festa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="painel.js" defer></script>
+</head>
+<body class="dashboard-page">
+  <header class="topbar">
+    <a class="brand" href="index.html">PIZZARIA <span>&</span> FESTA</a>
+    <button class="logout-button" id="logout">Sair</button>
+  </header>
+  <main class="dashboard">
+    <p class="eyebrow">ÁREA RESTRITA</p>
+    <h1>Bem-vindo ao painel.</h1>
+    <p class="muted">Você entrou com sua conta do GitHub.</p>
+    <div class="user-card">
+      <img id="avatar" alt="Foto do perfil" src="">
+      <div><h2 id="user-name">Verificando acesso...</h2><a id="user-link" href="#" target="_blank" rel="noreferrer">Ver perfil no GitHub</a></div>
+    </div>
+    <div class="dashboard-note"><strong>Painel administrativo</strong><p>Esta é a área inicial da equipe. Aqui poderão ser adicionados recursos para administrar pedidos, cardápio, reservas e eventos.</p></div>
+    <a class="back-link" href="index.html">Voltar para o site</a>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
